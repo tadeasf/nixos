@@ -87,7 +87,7 @@
     #  thunderbird
     thunderbird
     chromium
-    zed
+    zed-editor
     google-chrome
     code-cursor
     steam
@@ -122,6 +122,15 @@
   tmux
   git
   zsh
+  go
+  python313
+  nodejs_22
+  bun
+  cargo
+  rustc
+  rustup
+  gh
+  mise
   fish
   yazi
   ghostty
