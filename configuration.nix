@@ -132,13 +132,13 @@
     interactiveShellInit = ''
       source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
       [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-  
+
       # Enable autosuggestions
       source ${pkgs.zsh-autosuggestions}/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-  
+
       # Enable syntax highlighting
       source ${pkgs.zsh-syntax-highlighting}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-  
+
       # Initialize fzf
       source ${pkgs.fzf}/share/fzf/key-bindings.zsh
       source ${pkgs.fzf}/share/fzf/completion.zsh
@@ -178,7 +178,23 @@
   yazi
   ghostty
   wezterm
+  chezmoi
   alacritty
+  fastfetch
+  jdk23
+  gnomecast
+  gnome-extension-manager
+  ipfetch
+  freshfetch
+  ghfetch
+  kubefetch
+  obsidian
+  distrobox
+  distrobox-tui
+  boxbuddy
+  podman
+  podman-compose
+  podman-desktop
   zoxide
   ];
 
