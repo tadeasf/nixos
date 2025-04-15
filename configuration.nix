@@ -99,13 +99,51 @@
     warp
     vscode
     ];
-    shell = pkgs.fish;
+    shell = pkgs.zsh;
   };
 
   # Install firefox.
   programs.firefox.enable = true;
-  programs.fish.enable = true;
-
+  programs.zsh = {
+    enable = true;
+    ohMyZsh = {
+      enable = true;
+      theme = "robbyrussell";
+      plugins = [ "git" "docker" "fzf" ];
+    };
+    autosuggestions.enable = true;
+    syntaxHighlighting.enable = true;
+    shellAliases = {
+      c = "clear";
+      e = "exit";
+      v = "nvim";
+      ls = "eza";
+      l = "eza -la";
+      lt = "eza -la --sort=modified";
+      lsize = "eza -la --sort=size";
+      rebuild = "sudo nixos-rebuild switch";
+      configure = "sudo nvim /etc/nixos/configuration.nix";
+      nix-install = "nix-env -iA";
+      nix-search = "nix-env -qaP";
+      nix-update = "nix-env -u";
+      nix-list = "nix-env -q";
+      nix-remove = "nix-env -e";
+    };
+    interactiveShellInit = ''
+      source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
+      [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+  
+      # Enable autosuggestions
+      source ${pkgs.zsh-autosuggestions}/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+  
+      # Enable syntax highlighting
+      source ${pkgs.zsh-syntax-highlighting}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+  
+      # Initialize fzf
+      source ${pkgs.fzf}/share/fzf/key-bindings.zsh
+      source ${pkgs.fzf}/share/fzf/completion.zsh
+    '';
+  };
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -115,6 +153,11 @@
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
   wget
+  eza
+  fzf
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+  zsh-powerlevel10k
   curl
   vim
   neovim
@@ -136,6 +179,7 @@
   ghostty
   wezterm
   alacritty
+  zoxide
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -166,3 +210,5 @@
   system.stateVersion = "24.11"; # Did you read the comment?
 
 }
+
+
