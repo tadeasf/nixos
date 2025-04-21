@@ -48,7 +48,7 @@
     # Programming languages and tools
     go python313 nodejs_22 bun
     rustup
-    gcc clang llvm
+    gcc
     cmake ninja meson pkg-config gnumake
     gdb lldb
     jdk23
