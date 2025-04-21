@@ -26,6 +26,9 @@
     settings.experimental-features = [ "nix-command" "flakes" ];
   };
 
+  # Add this line to enable Home Manager backup files
+  home-manager.backupFileExtension = "backup-before-home-manager";
+
   # Required system version
   system.stateVersion = "24.11";
 }
