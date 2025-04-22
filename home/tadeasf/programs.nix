@@ -62,10 +62,9 @@
     mise chezmoi
     docker kubernetes kubectl helm
     terraform ansible
-    postman insomnia
+    insomnia
     dbeaver-bin mongodb-compass
     jetbrains.idea-community
-    jetbrains.webstorm
     jetbrains.pycharm-community
     android-studio
     flutter
@@ -74,13 +73,13 @@
     gimp krita inkscape
     darktable rawtherapee
     gnome-tweaks
-    kdePackages.kdenlive openshot-qt
+    kdePackages.kdenlive
     upscayl
-    audacity obs-studio handbrake
+    obs-studio handbrake
 
     # Office/Productivity
     libreoffice obsidian
-    spotify vlc mpv
+    spotify vlc mpv haruna
     calibre
     proton-pass
 
