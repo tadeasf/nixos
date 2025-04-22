@@ -101,5 +101,6 @@
     synapse
     zoxide fish gnomecast
     speedtest-cli speedtest-go
+    timeshift
   ];
 }
