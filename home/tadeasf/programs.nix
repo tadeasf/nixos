@@ -75,7 +75,7 @@
     darktable rawtherapee
     gnome-tweaks
     kdePackages.kdenlive openshot-qt
-    pscayl
+    upscayl
     audacity obs-studio handbrake
 
     # Office/Productivity
