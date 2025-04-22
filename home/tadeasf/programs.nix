@@ -64,8 +64,6 @@
     terraform ansible
     insomnia
     dbeaver-bin mongodb-compass
-    jetbrains.idea-community
-    jetbrains.pycharm-community
     android-studio
     flutter
 
