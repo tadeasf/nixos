@@ -73,8 +73,9 @@
     # Creative software
     gimp krita inkscape
     darktable rawtherapee
+    gnome-tweaks
     kdePackages.kdenlive openshot-qt
-    blender upscayl
+    pscayl
     audacity obs-studio handbrake
 
     # Office/Productivity
@@ -82,30 +83,22 @@
     spotify vlc mpv
     calibre
     proton-pass
-    plex-desktop
 
     # System tools
-    htop btop iotop
+    htop btop
     fastfetch neofetch ipfetch freshfetch ghfetch kubefetch
     gnome-extension-manager
-    remmina barrier
 
     # Virtualization and containers
     distrobox distrobox-tui boxbuddy
     podman podman-compose podman-desktop
     virt-manager qemu
 
-    # Security
-    keepassxc bitwarden
-
     # Communication
-    discord slack element-desktop
+    discord slack
 
     # Additional tools
     synapse
     zoxide fish gnomecast
-
-    # Design tools
-    figma-linux
   ];
 }
