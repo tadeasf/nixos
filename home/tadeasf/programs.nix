@@ -31,7 +31,10 @@
     libsForQt5.dolphin
     nemo
     warp
+    wine
+    winetricks
     vscode
+    qbittorrent-enhanced
 
     # Basic utilities
     eza fzf unzip
