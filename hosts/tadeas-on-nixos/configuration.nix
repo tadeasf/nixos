@@ -28,6 +28,15 @@
 
   # Add this line to enable Home Manager backup files
   home-manager.backupFileExtension = "backup-before-home-manager";
+    boot.loader.systemd-boot.configurationLimit = 10;  # Or use grub.configurationLimit if applicable
+
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 7d";
+  };
+
+  nix.settings.auto-optimise-store = true;
 
   # Required system version
   system.stateVersion = "24.11";
