@@ -100,5 +100,6 @@
     # Additional tools
     synapse
     zoxide fish gnomecast
+    speedtest-cli speedtest-go
   ];
 }
