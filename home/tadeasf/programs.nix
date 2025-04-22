@@ -35,6 +35,7 @@
     winetricks
     vscode
     qbittorrent-enhanced
+    gpg
 
     # Basic utilities
     eza fzf unzip
