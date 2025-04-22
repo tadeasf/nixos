@@ -73,7 +73,7 @@
     # Creative software
     gimp krita inkscape
     darktable rawtherapee digikam
-    kdenlive openshot-qt
+    kdePackages.kdenlive openshot-qt
     blender upscayl
     audacity obs-studio handbrake
 
